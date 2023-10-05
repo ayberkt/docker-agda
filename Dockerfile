@@ -1,8 +1,8 @@
-FROM haskell:9.4.4
+FROM haskell:9.6.2
 
 RUN apt update && apt upgrade -y
 RUN cabal update
-RUN cabal v2-install Agda-2.6.3
+RUN cabal v2-install Agda-2.6.4
 RUN apt install wget
 RUN export PATH=$PATH:~/.cabal/bin/
 
