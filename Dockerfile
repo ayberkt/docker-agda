@@ -2,7 +2,7 @@ FROM haskell:9.6.2
 
 RUN apt update && apt upgrade -y
 RUN cabal update
-RUN cabal v2-install --ghc-options="-O" Agda-2.6.4
+RUN cabal v2-install --ghc-options="-O -foptimize-heavily" Agda-2.6.4
 RUN apt install wget
 RUN export PATH=$PATH:~/.cabal/bin/
 
