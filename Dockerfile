@@ -1,4 +1,4 @@
-FROM haskell:9.12.2-bullseye
+FROM haskell:9.12.2-bookworm
 
 RUN apt update && apt upgrade -y
 RUN cabal update
