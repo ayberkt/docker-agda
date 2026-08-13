@@ -1,4 +1,4 @@
-FROM haskell:9.12.2-bookworm
+FROM haskell:9.14.1-bookworm
 
 RUN apt update && apt upgrade -y
 RUN cabal update
